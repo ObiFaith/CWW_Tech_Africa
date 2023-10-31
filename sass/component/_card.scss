@@ -1,0 +1,10 @@
+.card{
+    background-color: $blue-100;
+    border-radius: 1.5625rem;
+    padding: 1.5rem;
+    width: 100%;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.10), 0px 0px 18px 0px rgba(0, 0, 0, 0.05) inset;
+    @include mobile{margin-top: 1rem; text-align: center; & h3{padding-block: .75rem}}
+    &__icon{@extend %icons; background-color: rgba($color: $blue-200, $alpha: 1); padding: .5rem}       
+    &__row{@extend %card__row; @include tablet{padding-top: 1.3rem;}}
+}

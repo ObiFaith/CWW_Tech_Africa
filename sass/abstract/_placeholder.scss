@@ -1,0 +1,13 @@
+form input{
+    border-radius: calc($radius * 2);
+    padding-block: .5rem;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba($color: $dark, $alpha: .5);
+}
+form input::placeholder{
+    color: rgba($color: $dark, $alpha: .5);
+    text-indent: 5px;
+    font-style: italic;
+    font-weight: 500;
+}

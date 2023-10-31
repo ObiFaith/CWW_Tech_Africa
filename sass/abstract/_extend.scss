@@ -1,0 +1,3 @@
+%text__center{text-align:center; max-width: 560px; margin-inline: auto;}
+%icons{border-radius: 50%; text-align: center; padding-top: .8rem; display: inline-block; min-width: 3rem; min-height: 3rem; }
+%card__row{@include tablet{ display: flex; gap: 1.25rem; & h3{padding-block: .5rem}}}

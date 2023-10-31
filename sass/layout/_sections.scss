@@ -1,0 +1,42 @@
+/* Two_Column_Layout */
+.volunteer, .intern{
+    padding: 1.5rem 0 2.5rem; 
+    & p{padding: .5rem 0 1.5rem;}
+    text-align: center; text-wrap: balance;
+    @include tablet{@include d-flex; gap: 3rem; text-align: left;}
+    & img{@include mobile{display: none;}}
+}
+.intern{padding-bottom: 5rem;}
+
+/* Promo Section */
+.promo{ @extend %text__center; & p{padding: .5rem 0 1.5rem;} }
+
+/* About */
+.about{
+    background: url('/Img/bg-africa.png') no-repeat center/contain;
+    background-color: $blue;
+    background-blend-mode: screen;
+    color: $white;
+    border-radius: 2.5rem;
+    box-shadow: -8px 2px 50px 0px rgba(3, 33, 118, 0.20);
+    padding-block: 3.56rem;
+
+    &__text{padding-block: 2rem;}
+    & .btn--light{border-color: #fff}
+    @include mobile{width: 100%; border-radius: 0; padding-inline: 1rem;}
+}
+
+.community{ max-width: 30rem;  & p{margin-bottom: 2rem}; }
+
+footer{
+    &, & a{color: #fff;}
+    & .bg__grey{ padding: 3.88rem 0 2.88rem; }
+    & p{padding-top: .75rem;}
+    & .bg__dark--600, & .col h3, & a{ padding-top: 1rem; }
+    & p, & .bg__dark--600, & a{padding-bottom: 1rem;}
+    & .socials img + img{margin-left: 1rem}
+
+    @include mobile{.bg__dark--600{text-align: center} .socials{margin-top: .5rem} & .footer .footer{padding-top: 1rem}}
+    @include tablet{ & .footer{display: flex; & h3{padding-top: 0}} & .footer:first-child{gap: 6rem } .bg__dark--600 .footer{justify-content: space-between; align-items: center;}}
+    @include desktop{& .footer:first-child{gap: 10rem }}
+}

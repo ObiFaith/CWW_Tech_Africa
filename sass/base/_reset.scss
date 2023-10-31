@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 0;
+    outline: none;
+}
+a{text-decoration: none; color: $dark;}
+body{color: $dark}
+img{max-width: 100%;}
+section{padding-block: 4.5rem;}
+section, .footer{@include container;}
+li{list-style: none;}
+ul{margin: 0; padding: 0;}
+/* INBUILT CLASSES */
+.bg__grey{background-color: $grey;}
+.bg__dark{background-color: $dark;}
+.bg__dark--600{background-color: $dark--600;}
+.bg__light--blue{background-color: $blue-300;}
+.col{width: 100%;}
+.text__center{@extend %text__center}
+.text-warning{color: $yellow}
+.visible{display: block !important;}

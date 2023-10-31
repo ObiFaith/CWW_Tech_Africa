@@ -1,0 +1,20 @@
+.header{ @include container; &--mobile{@include d-flex; justify-content: space-between}; @include tablet{@include d-flex; justify-content: space-between; & svg{display: none;}}}
+.nav{
+    display: none;
+    text-align: center;
+    &__link.active{color: $blue; font-weight: 600;}  
+    @include mobile{
+        margin-bottom: 1rem; 
+        & .btns{margin-top: 1rem;}
+        & .btn{display: block; width: min(150px, 50%); margin: .5rem auto;} 
+        &__item + &__item{margin-top: .5rem}
+    }
+
+    @include tablet{
+        @include d-flex;
+        font-weight: 500;
+        gap: 2rem;
+        &__list, & .btns{ @include d-flex; gap: 1rem;}          
+        & .btns .btn{padding-inline: .94rem;}
+    }
+}

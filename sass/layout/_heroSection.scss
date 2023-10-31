@@ -1,0 +1,26 @@
+.hero__section{
+    @include container;
+    @include d-flex;
+    color: $white;
+    position: relative;
+
+    &--left{background: url('/Img/africa.svg') no-repeat 70% 38%;}
+    & h1{font-size: clamp(3rem, 3.5rem, 3.75rem); line-height: 1.1; padding-top: .5rem}
+    &--text{margin-block: 1.5rem;}
+    &--right{display: none;}
+    &--info span{opacity: .85;}
+    & .btn--primary{padding-inline: 1.25rem;}
+    &--infos{@include d-flex; gap: calc($radius * 3); padding-top: .5rem;}
+    &--info{
+        color: $grey;
+        padding: calc($radius / 2) calc($radius * 2);
+        background-color: $white;
+        border-radius: calc($radius * 3);
+        font-size: clamp(10px, 10px, 14px); 
+    }
+
+    /* MEDIA QUERIES */
+    @include tablet{ .col{width: 80%} }
+    @include desktop{gap: 3rem;&--right{display: block !important;}}
+     
+}

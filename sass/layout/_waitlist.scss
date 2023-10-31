@@ -1,0 +1,12 @@
+.waitlist{
+    @include d-flex; gap: 3rem;
+    @include tablet{& .text__center{text-align: left;}}
+    & .col:first-child{@include mobile{display: none;}}
+    &__progress--bar, & .btn--primary{margin-top: 1rem; display: inline-block;}
+
+    &__svg{@extend %icons; background-color: rgba($color: $dark, $alpha: .08);}
+    
+    &__flex, &__progress--bar{@include d-flex; gap: 1rem}
+    &__flex{justify-content: space-between;}
+    &__progress--width{background-color: $yellow; padding: .25rem; border-radius: .625rem;}
+}

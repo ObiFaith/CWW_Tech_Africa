@@ -1,0 +1,18 @@
+.service{   
+    &--second{
+        @include mobile{
+            text-align: center;
+            & img, & p{padding-bottom: .75rem;}; 
+            & .col + .col{padding-top: .75rem;}
+        }
+        @extend %card__row;
+    }
+
+    &s{@include tablet{@include grid;justify-items: space-between; gap: 4rem; padding-top: 3rem}}
+    &__col{
+        @include desktop{@include d-flex; gap: .75rem;}
+        &--title{padding-bottom: .5rem;}
+    }
+    &__col{@include mobile{padding-top: 2rem; text-wrap: balance; text-align: center;} @include tablet{padding-top: 0;}}
+    &--icon{@extend %icons; background-color: rgba($color: $yellow, $alpha: .08);}
+}
