@@ -1,7 +1,7 @@
 @mixin container{ width: min(95%, 960px); margin-inline: auto; }
 @mixin d-flex{display: flex; align-items: center;}
 @mixin grid{display: grid; grid-template-columns: repeat(2, 1fr); align-items: center;}
-@mixin btn-type($bgClr, $borderClr: $blue){background-color: $bgClr; border: 1px solid $borderClr;}
+@mixin btn-type($bgClr: transparent, $borderClr: $blue){background-color: $bgClr; border: 1px solid $borderClr;}
 
 @mixin mobile{
     @media screen and (max-width: 760px) {

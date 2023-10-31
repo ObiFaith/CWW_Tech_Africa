@@ -22,7 +22,7 @@
     padding-block: 3.56rem;
 
     &__text{padding-block: 2rem;}
-    & .btn--light{border-color: #fff}
+    & .btn--light{border-color: $white; color: $white;}
     @include mobile{width: 100%; border-radius: 0; padding-inline: 1rem;}
 }
 
@@ -35,6 +35,7 @@ footer{
     & .bg__dark--600, & .col h3, & a{ padding-top: 1rem; }
     & p, & .bg__dark--600, & a{padding-bottom: 1rem;}
     & .socials img + img{margin-left: 1rem}
+    & .btn--primary:hover{color: $white}
 
     @include mobile{.bg__dark--600{text-align: center} .socials{margin-top: .5rem} & .footer .footer{padding-top: 1rem}}
     @include tablet{ & .footer{display: flex; & h3{padding-top: 0}} & .footer:first-child{gap: 6rem } .bg__dark--600 .footer{justify-content: space-between; align-items: center;}}

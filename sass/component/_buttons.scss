@@ -4,9 +4,9 @@
     color: #fff;
     display: inline-block;
 
-    &--light, &--primary:hover{ @include btn-type($white); color: $blue;}
+    &--light, &--primary:hover{ @include btn-type(); color: $blue;}
     &--warning{ @include btn-type($yellow,$yellow); color: $dark}
-    &--primary, &--light:hover{ @include btn-type($blue); color: $white; box-shadow: 0px 1px 12px 0px rgba(0, 31, 121, 0.08); }
+    &--primary, &--light:hover{ @include btn-type($blue); color: #fff; box-shadow: 0px 1px 12px 0px rgba(0, 31, 121, 0.08); }
 
     &--light:hover, &--primary:hover{transform: background-color; transition: .4s ease-in-out}
 }

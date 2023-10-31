@@ -10,6 +10,7 @@
     &--right{display: none;}
     &--info span{opacity: .85;}
     & .btn--primary{padding-inline: 1.25rem;}
+    & .btn--primary:hover{color: $white}
     &--infos{@include d-flex; gap: calc($radius * 3); padding-top: .5rem;}
     &--info{
         color: $grey;

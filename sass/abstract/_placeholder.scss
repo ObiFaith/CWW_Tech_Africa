@@ -11,3 +11,4 @@ form input::placeholder{
     font-style: italic;
     font-weight: 500;
 }
+form input:focus, form input:active{border: 1px solid $blue}
